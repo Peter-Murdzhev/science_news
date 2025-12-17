@@ -1,6 +1,7 @@
 
-export default async function fetchNews(req, res) {
+export default async function handler(req, res) {
     const apiKey = process.env.GNEWS_API_KEY;
+    console.log("API key: ", apiKey)
     const { query } = req.query;
 
 
